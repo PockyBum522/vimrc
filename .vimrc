@@ -1,7 +1,7 @@
 syntax on
 filetype indent plugin on
 
-# I did the thing
+" I did the thing
 noremap ; l
 noremap l k
 noremap k j
@@ -15,7 +15,7 @@ let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 
-# For learning to use hjkl...BY FORCE.
+" For learning to use hjkl...BY FORCE.
 no <down> <Nop>
 no <left> <Nop>
 no <right> <Nop>
@@ -26,6 +26,6 @@ ino <left> <Nop>
 ino <right> <Nop>
 ino <up> <Nop>
 
-# Make enter useful when not in insert, too
+" Make enter useful when not in insert, too
 nmap <S-Enter> i<CR><Esc>k
 nmap <CR> i<CR><Esc>;
