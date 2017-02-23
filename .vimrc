@@ -29,3 +29,8 @@ ino <up> <Nop>
 " Make enter useful when not in insert, too
 nmap <S-Enter> i<CR><Esc>k
 nmap <CR> i<CR><Esc>;
+
+"custom copy and paste
+vmap <C-c> :w! ~/.vimbuf<CR>
+nmap <C-c> :.w! ~/.vimbuf<CR>
+nmap <C-v> :r ~/.vimbuf<CR> 
