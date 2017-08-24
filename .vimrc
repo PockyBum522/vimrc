@@ -9,6 +9,7 @@ noremap j h
 
 set modeline
 set background=dark
+hi Visual ctermfg=NONE ctermbg=BLUE cterm=bold
 set number
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
@@ -28,9 +29,12 @@ ino <up> <Nop>
 
 " Make enter useful when not in insert, too
 nmap <S-Enter> i<CR><Esc>k
-nmap <CR> i<CR><Esc>;
+nmap <CR> i<CR><Esc>
 
 "custom copy and paste
 vmap <C-c> :w! ~/.vimbuf<CR>
 nmap <C-c> :.w! ~/.vimbuf<CR>
-nmap <C-v> :r ~/.vimbuf<CR> 
+nmap <C-v> :set paste<bar>:r ~/.vimbuf<bar>:set nopaste<CR>
+
+"increment number moved from ctrl+a because tmux to ctrl + numpad+
+noremap <C-i> <C-A>
