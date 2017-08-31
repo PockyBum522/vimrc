@@ -13,10 +13,10 @@ hi Visual ctermfg=NONE ctermbg=BLUE cterm=bold
 set number
 
 " Uncomment these if you're using vim over cygwin, they're for block cursor but don't work on a local console
-let &t_ti.="\e[1 q"
-let &t_SI.="\e[5 q"
-let &t_EI.="\e[1 q"
-let &t_te.="\e[0 q"
+"let &t_ti.="\e[1 q"
+"let &t_SI.="\e[5 q"
+"let &t_EI.="\e[1 q"
+"let &t_te.="\e[0 q"
 
 " For learning to use hjkl...BY FORCE.
 no <down> <Nop>
